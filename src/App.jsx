@@ -23,8 +23,8 @@ export const App = () => {
 
       {/* Pages */}
       <Routes>
-        <Route path="/" element={<Home searchQuery={debouncedQuery}/>} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/shopping-cart/" element={<Home searchQuery={debouncedQuery}/>} />
+        <Route path="/shopping-cart/cart" element={<Cart />} />
       </Routes>
 
     </div>
