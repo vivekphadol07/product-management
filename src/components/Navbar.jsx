@@ -18,7 +18,7 @@ export const Navbar = ({ setSearchQuery }) => {
         <div className="h-16 flex items-center justify-between gap-6">
 
           {/* LOGO */}
-          <NavLink to="/" className="flex items-center">
+          <NavLink to="/shopping-cart/" className="flex items-center">
             <img src={`${import.meta.env.BASE_URL}/logo.png`} alt="Logo" className="h-10" />
           </NavLink>
 
@@ -35,11 +35,11 @@ export const Navbar = ({ setSearchQuery }) => {
 
           {/* ACTIONS */}
           <div className="flex items-center gap-6">
-            <NavLink to="/" className="font-medium">
+            <NavLink to="/shopping-cart/" className="font-medium">
               Home
             </NavLink>
 
-            <NavLink to="/cart" className="relative">
+            <NavLink to="/shopping-cart/cart" className="relative">
               <FaShoppingCart className="text-xl" />
               {cartItems.length > 0 && (
                 <span className="absolute -top-2 -right-2 bg-green-500 text-white text-xs h-5 w-5 rounded-full flex items-center justify-center">

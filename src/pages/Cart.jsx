@@ -56,7 +56,7 @@ export const Cart = () => {
         <div className="flex flex-col items-center justify-center h-[60vh] gap-4">
           <h1 className="text-2xl font-semibold">Your Cart is Empty</h1>
 
-          <Link to="/">
+          <Link to="/shopping-cart/">
             <button className="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600">
               Shop Now
             </button>
