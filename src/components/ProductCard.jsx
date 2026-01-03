@@ -36,7 +36,7 @@ const ProductCard = ({ product }) => {
       {/* Action */}
       <button
         onClick={() =>
-          navigate(`/Product Management/edit-product/${product.id}`)
+          navigate(`/product-management/edit-product/${product.id}`)
         }
         className="
           mt-5 w-full px-4 py-2.5 text-sm font-medium
