@@ -43,8 +43,8 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
   };
 
   return (
-    <div className="bg-[#EAF4F1] border border-[#B6D1C7] rounded-2xl shadow-md p-6">
-      <h3 className="text-xl font-semibold mb-6 text-[#335F5F]">
+    <div className="bg-white border border-[#2337C6]/30 rounded-2xl shadow-sm p-6">
+      <h3 className="text-xl font-semibold mb-6 text-[#031273]">
         {editingProduct ? "Edit Product" : "Add Product"}
       </h3>
 
@@ -63,7 +63,7 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
               ${
                 errors.name
                   ? "border-red-500 focus:ring-red-300"
-                  : "border-[#B6D1C7] focus:ring-[#5F8F82]"
+                  : "border-[#2337C6]/40 focus:ring-[#4169E1]"
               }`}
           />
           {errors.name && (
@@ -87,7 +87,7 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
               ${
                 errors.price
                   ? "border-red-500 focus:ring-red-300"
-                  : "border-[#B6D1C7] focus:ring-[#5F8F82]"
+                  : "border-[#2337C6]/40 focus:ring-[#4169E1]"
               }`}
           />
           {errors.price && (
@@ -111,7 +111,7 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
               ${
                 errors.category
                   ? "border-red-500 focus:ring-red-300"
-                  : "border-[#B6D1C7] focus:ring-[#5F8F82]"
+                  : "border-[#2337C6]/40 focus:ring-[#4169E1]"
               }`}
           />
           {errors.category && (
@@ -130,8 +130,8 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
             onChange={(e) =>
               setForm({ ...form, stock: e.target.value })
             }
-            className="w-full px-4 py-2.5 rounded-lg border border-[#B6D1C7] bg-white
-              focus:outline-none focus:ring-2 focus:ring-[#5F8F82]"
+            className="w-full px-4 py-2.5 rounded-lg border border-[#2337C6]/40 bg-white
+              focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
           />
         </div>
 
@@ -144,8 +144,8 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
               setForm({ ...form, description: e.target.value })
             }
             rows="3"
-            className="w-full px-4 py-2.5 rounded-lg border border-[#B6D1C7] bg-white
-              focus:outline-none focus:ring-2 focus:ring-[#5F8F82]"
+            className="w-full px-4 py-2.5 rounded-lg border border-[#2337C6]/40 bg-white
+              focus:outline-none focus:ring-2 focus:ring-[#4169E1]"
           />
         </div>
 
@@ -155,8 +155,8 @@ const ProductForm = ({ saveProduct, editingProduct }) => {
             type="submit"
             className="
               px-8 py-2.5 rounded-full
-              bg-[#335F5F] text-white font-medium
-              hover:bg-[#5F8F82]
+              bg-[#031273] text-white font-medium
+              hover:bg-[#0504AA]
               transition-all duration-200
               shadow-sm hover:shadow-md
             "

@@ -33,7 +33,7 @@ const Home = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#EAF4F1]-400">
+    <div className="min-h-screen bg-[#4169E1]/5">
       <Navbar
         view={view}
         setView={setView}
@@ -43,9 +43,9 @@ const Home = () => {
 
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* CONTENT CARD */}
-        <div className="bg-white rounded-2xl shadow-md p-6 transition-all">
+        <div className="bg-white rounded-2xl shadow-sm border border-[#2337C6]/30 p-6">
           {view === "table" ? (
-            <div className="border border-[#B6D1C7] rounded-xl overflow-x-auto">
+            <div className="border border-[#2337C6]/30 rounded-xl overflow-x-auto">
               <ProductTable products={currentProducts} />
             </div>
           ) : (
@@ -59,7 +59,7 @@ const Home = () => {
 
         {/* PAGINATION */}
         <div className="mt-10 flex justify-center">
-          <div className="bg-white px-6 py-3 rounded-full shadow-md border border-[#B6D1C7]">
+          <div className="bg-white px-6 py-3 rounded-full shadow-sm border border-[#2337C6]/30">
             <Pagination
               currentPage={currentPage}
               totalPages={totalPages}

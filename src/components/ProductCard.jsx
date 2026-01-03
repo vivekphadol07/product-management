@@ -6,41 +6,43 @@ const ProductCard = ({ product }) => {
   return (
     <div
       className="
-        bg-white border border-[#B6D1C7] rounded-2xl p-5
+        bg-white border border-[#2337C6]/30 rounded-2xl p-5
         shadow-sm hover:shadow-lg
         transition-all duration-200
         hover:-translate-y-1
       "
     >
       {/* Product Name */}
-      <h4 className="text-lg font-semibold text-[#335F5F] mb-3">
+      <h4 className="text-lg font-semibold text-[#031273] mb-3">
         {product.name}
       </h4>
 
       {/* Product Info */}
-      <div className="space-y-2 text-sm text-gray-600">
+      <div className="space-y-2 text-sm text-[#0504AA]">
         <p className="flex justify-between">
-          <span className="font-medium text-gray-700">Price</span>
+          <span className="font-medium text-[#2337C6]">Price</span>
           <span>₹{product.price}</span>
         </p>
         <p className="flex justify-between">
-          <span className="font-medium text-gray-700">Category</span>
+          <span className="font-medium text-[#2337C6]">Category</span>
           <span>{product.category}</span>
         </p>
         <p className="flex justify-between">
-          <span className="font-medium text-gray-700">Stock</span>
+          <span className="font-medium text-[#2337C6]">Stock</span>
           <span>{product.stock}</span>
         </p>
       </div>
 
       {/* Action */}
       <button
-        onClick={() => navigate(`/Product Management/edit-product/${product.id}`)}
+        onClick={() =>
+          navigate(`/Product Management/edit-product/${product.id}`)
+        }
         className="
           mt-5 w-full px-4 py-2.5 text-sm font-medium
           rounded-full
-          bg-[#335F5F] text-white
-          hover:bg-[#5F8F82]
+          bg-[#031273] text-white
+          hover:bg-[#0504AA]
           transition-all duration-200
           shadow-sm hover:shadow-md
         "
