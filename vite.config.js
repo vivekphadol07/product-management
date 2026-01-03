@@ -8,5 +8,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  base:"/Product Management"
+  base: process.env.VITE_BASE_PATH || "/Product Management",
 })
