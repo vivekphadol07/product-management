@@ -70,7 +70,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
               hover:bg-[#0504AA]\r
               transition-all duration-200\r
               shadow-sm hover:shadow-md\r
-            `,children:o?"Update Product":"Add Product"})})]})]})},p1=()=>{const i=Ba(),{addOrUpdateProduct:o}=Wf(),s=f=>{o(f),i("/Product Management/")};return H.jsx("div",{className:"min-h-screen bg-[#4169E1]/5",children:H.jsxs("div",{className:"max-w-4xl mx-auto px-4 py-8",children:[H.jsxs("button",{onClick:()=>i("/product-management/"),className:`\r
+            `,children:o?"Update Product":"Add Product"})})]})]})},p1=()=>{const i=Ba(),{addOrUpdateProduct:o}=Wf(),s=f=>{o(f),i("/product-management/")};return H.jsx("div",{className:"min-h-screen bg-[#4169E1]/5",children:H.jsxs("div",{className:"max-w-4xl mx-auto px-4 py-8",children:[H.jsxs("button",{onClick:()=>i("/product-management/"),className:`\r
             mb-6 inline-flex items-center gap-2\r
             text-sm font-medium\r
             text-[#0504AA]\r
