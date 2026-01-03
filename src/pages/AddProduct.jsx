@@ -9,7 +9,7 @@ const AddProduct = () => {
 
   const saveProduct = (product) => {
     addOrUpdateProduct(product);
-    navigate("/Product Management/");
+    navigate("/product-management/");
   };
 
   return (
